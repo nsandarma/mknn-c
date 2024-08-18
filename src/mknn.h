@@ -2,7 +2,6 @@
 #define MKNN_H
 
 #define u8 unsigned char
-#define R 2.0
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -41,9 +40,20 @@ void validity(Data *data, u8 rows, u8 k);
 float accuracy(Data *data, u8 rows);
 u8 count_value(u8 *arr, u8 size);
 
-
-
-
-
-
 #endif 
+
+#ifndef R
+#define R 2.0
+#endif // !R
+
+#ifndef Rows
+#define Rows 10
+#endif // !Rows
+
+#ifndef Cols
+#define Cols 3
+#endif // !Cols
+
+#ifndef K
+#define K  2
+#endif // !K
